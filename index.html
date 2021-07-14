@@ -1,19 +1,320 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"> <!-- reset the browser based css -->
-    <link rel="stylesheet" href="css/style.css"> <!-- adding css to the page -->
-    <script src="https://kit.fontawesome.com/072d97feca.js" crossorigin="anonymous"></script> <!-- using fontawesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <!-- Loading Raleway Font from googleapis.com -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset du css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- ajout du style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/072d97feca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Police Raleway depuis googleapis.com -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <title>Reservia</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <header class="wrapper">
+      <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
+      <nav>
+        <!--barre de nav-->
+        <ul>
+          <li><a href="#hebergements" title="Hébergements">Hébergements</a></li>
+          <li><a href="#activite" title="Activités">Activités</a></li>
+          <li><a href="" title="S'inscrire">S'inscrire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <div class="titre">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+      <!--barre de recherche -->
+      <div class="searchbar">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" class="search" placeholder="Marseille,France" />
+        <input class="btn large-button" type="submit" value="Rechercher" />
+      </div>
+      <!-- fin barre de recherche-->
+
+      <!--bloc filtres-->
+      <div class="filtres">
+        <p>Filtres</p>
+        <!--filtre eco-->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round">Economique</span>
+        </label>
+        <!--filtre Familial-->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round">Familial</span>
+        </label>
+        <!--filtre romantique-->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round">Romantique</span>
+        </label>
+        <!--filtre pets -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round">Animaux autorisés</span>
+        </label>
+      </div>
+      <!--Fin du bloc Filtres-->
+
+      <!--info nb logements-->
+      <div class="info">
+        <i class="fas fa-info-circle"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+
+      <!-- départ spotlight hebergements-->
+      <section id="hebergements" class="blocheb">
+        <div class="hebergements">
+          <h2>Hébergements à Marseille</h2>
+          <!--départ du flex hebergements-->
+          <section class="articles">
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="image Auberge de la Cannebière"
+                />
+                <p>Auberge de la Cannebière</p>
+                <p>Nuit à partir de 25€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star uncheck"></i>
+              </a>
+            </article>
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="image Hôtel du port"
+                />
+                <p>Hôtel du port</p>
+                <p>Nuit à partir de 52€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+              </a>
+            </article>
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="image Hôtel Les mouettes"
+                />
+                <p>Hôtel Les mouettes</p>
+                <p>Nuit à partir de 76€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star uncheck"></i>
+              </a>
+            </article>
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="image Hôtel de La mer"
+                />
+                <p>Hôtel de La mer</p>
+                <p>Nuit à partir de 46€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star uncheck"></i>
+                <i class="fas fa-star uncheck"></i>
+              </a>
+            </article>
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="image Auberge Le Panier"
+                />
+                <p>Auberge Le Panier</p>
+                <p>Nuit à partir de 23€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star uncheck"></i>
+              </a>
+            </article>
+            <article class="heb">
+              <a href="">
+                <img
+                  src="./img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="image Hôtel chez Amina"
+                />
+                <p>Hôtel chez Amina</p>
+                <p>Nuit à partir de 96€</p>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+                <i class="fas fa-star check"></i>
+              </a>
+            </article>
+          </section>
+          <!--fin du flex hebergements-->
+          <div>
+            <a href="">Afficher plus</a>
+          </div>
+        </div>
+      </section>
+      <!--fin du spotlight hebergements-->
+
+      <!--Départ bloc "les plus populaires"-->
+      <section class="blockpop">
+        <h3>Les plus populaires</h3>
+        <i class="fas fa-chart-line"></i>
+        <!--Départ spotlight pop-->
+        <aside class="populaires">
+          <article class="pop">
+            <a href="">
+              <img
+                src="./img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="image Hôtel Le soleil du matin"
+              />
+              <p>Hôtel Le soleil du matin</p>
+              <p>Nuit à partir de de 128€</p>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+            </a>
+          </article>
+          <article class="pop">
+            <a href="">
+              <img
+                src="./img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="image Hôtel Le soleil du matin"
+              />
+              <p>Hôtel Le soleil du matin</p>
+              <p>Nuit à partir de de 128€</p>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star uncheck"></i>
+            </a>
+          </article>
+          <article class="pop">
+            <a href="">
+              <img
+                src="./img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt=" image Au coeur de l'eau Chambre d'hôtes"
+              />
+              <p>Au coeur de l'eau Chambre d'hôtes</p>
+              <p>Nuit à partir de de 128€</p>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star check"></i>
+              <i class="fas fa-star uncheck"></i>
+            </a>
+          </article>
+        </aside>
+      </section>
+      <!--fin spotlight pop-->
+
+      <!--Départ du bloc activites-->
+      <div class="blocact">
+        <h3 id="activite">Activités à Martseille</h3>
+        <section class="activites">
+          <article class="act-full-height">
+            <img
+              src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              alt="image Vieux Port"
+            />
+            <p>Vieux Port</p>
+          </article>
+          <article class="act">
+            <img
+              src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              alt="image Fort de Promègues"
+            />
+            <p>Fort de Promègues</p>
+          </article>
+          <article class="act">
+            <img
+              src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              alt="image Îles de Frioul"
+            />
+            <p>Îles de Frioul</p>
+          </article>
+          <article class="act-full-height">
+            <img
+              src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt="image Parc National des Calanques"
+            />
+            <p>Parc National des Calanques</p>
+          </article>
+          <article class="act">
+            <img
+              src="./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              alt="image Notre-Dame-de-la-Garde"
+            />
+            <p>Notre-Dame-de-la-Garde</p>
+          </article>
+          <article class="act">
+            <img
+              src="./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              alt="image Parc Longchamp"
+            />
+            <p>Parc Longchamp</p>
+          </article>
+        </section>
+      </div>
+      <!--fin du bloc activites-->
+    </main>
+
+    <footer class="wrapper">
+      <div class="about">
+        <p>À propos</p>
+        <ul>
+          <li><a href="">Fonctionnement du site</a></li>
+          <li><a href="">Conditions générales de ventes</a></li>
+          <li><a href="">Données confidentielles</a></li>
+        </ul>
+      </div>
+      <div class="nosherb">
+        <p>Nos hébergements</p>
+        <ul>
+          <li><a href="">Charte qualité</a></li>
+          <li><a href="">Soumettre votre hôtel</a></li>
+        </ul>
+      </div>
+      <div class="assist">
+        <p>Assistance</p>
+        <ul>
+          <li><a href="">Centre d'aide</a></li>
+          <li><a href="">Nous contacter</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
