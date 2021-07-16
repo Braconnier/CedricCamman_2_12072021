@@ -20,7 +20,7 @@ a {
   justify-content: space-between;
 }
 nav {
-  width: 30%;
+  width: 28%;
 }
 nav ul {
   display: flex;
@@ -94,7 +94,7 @@ form .submit {
 }
 .btngrp {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 .switch {
   height: 50px;
@@ -107,7 +107,7 @@ form .submit {
   align-items: center;
 }
 .switch:hover {
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 2px 2px 2px grey;
 }
 .filtres .fas {
   width: 50px;
@@ -135,7 +135,7 @@ form .submit {
 .info i {
   width: 1.5em;
   height: 1.5em;
-  margin-right: 20px;
+  margin-right: 10px;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   color: #0065fc;
@@ -152,7 +152,7 @@ form .submit {
   color: #0065fc;
 }
 .uncheck {
-  color: grey;
+  color: #f2f2f2;
 }
 /* Fin nb Départ bloc hébergements    */
 .hebergements img {
@@ -172,7 +172,7 @@ form .submit {
   height: 630px;
   border-radius: 20px;
   background-color: #f2f2f2;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px #f2f2f2;
 }
 .articles {
   display: flex;
@@ -187,12 +187,12 @@ form .submit {
   vertical-align: middle;
   border-radius: 20px;
   margin: 20px;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px #f2f2f2;
 }
 .populaires {
   max-width: 420px;
   max-height: 630px;
   border-radius: 20px;
   background-color: #f2f2f2;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 1px 1px 1px #f2f2f2;
 }
