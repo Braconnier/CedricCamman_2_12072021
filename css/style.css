@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  max-width: 1440px;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "raleway", sans-serif;
+}
+/*    Header    */
+.topnav {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav {
+  width: 30%;
+}
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li a[title*="inscrire"] {
+  font-weight: 600;
+  color: #0065fc;
+}
+nav .active {
+  padding-top: 48px;
+  border-top: 2px solid blue;
+  color: #0065fc;
+}
+/*    Départ de la page   */
+.titre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.titre p {
+  font-size: 1em;
+  font-weight: 400;
+}
+/*    Début formulaire de recherche   */
+form {
+  width: 425px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+form:hover {
+  box-shadow: 1px 1px 1px grey;
+}
+form .fas {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+form .search {
+  width: 70%;
+}
+form .submit {
+  width: 140px;
+  background-color: #0065fc;
+  color: #ffffff;
+  border-radius: 0 10px 10px 0;
+}
+/*    Fin formulaire de recherche   */
+/*    Début des filtres   */
+.filtres {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.btngrp {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.switch {
+  height: 50px;
+  border-top: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.switch:hover {
+  box-shadow: 1px 1px 1px grey;
+}
+.filtres .fas {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #deebff;
+  color: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filtres span {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+/*    fin des filtres   */
+/*    début nb hébergements   */
+.info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.info i {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  color: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info p {
+  align-self: center;
+}
+/*    Fin nb Hébergements   */
+/*    notations de hébergements   */
+.check {
+  color: #0065fc;
+}
+.uncheck {
+  color: grey;
+}
+/* Fin nb Départ bloc hébergements    */
+.hebergements img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.populaires img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.activites img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.blocheb {
+  width: 880px;
+  height: 630px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 1px grey;
+}
+.articles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.heb {
+  width: 220px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 1px 1px 1px grey;
+}
+.populaires {
+  max-width: 420px;
+  max-height: 630px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 1px grey;
+}

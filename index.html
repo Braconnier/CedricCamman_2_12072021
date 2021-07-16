@@ -8,76 +8,83 @@
     <link rel="stylesheet" href="css/reset.css" />
     <!-- ajout du style -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/072d97feca.js"
       crossorigin="anonymous"
     ></script>
-    <!-- fontawesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- Police Raleway depuis googleapis.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Reservia</title>
   </head>
 
-  <body>
-    <header class="wrapper">
-      <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
-      <nav>
-        <!--barre de nav-->
-        <ul>
-          <li><a href="#hebergements" title="Hébergements">Hébergements</a></li>
-          <li><a href="#activite" title="Activités">Activités</a></li>
-          <li><a href="" title="S'inscrire">S'inscrire</a></li>
-        </ul>
-      </nav>
+  <body class="wrapper">
+    <header>
+      <div class="topnav">
+        <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
+        <nav>
+          <!--barre de nav-->
+          <ul>
+            <li>
+              <a class="active" href="#hebergements" title="Hébergements"
+                >Hébergements</a
+              >
+            </li>
+            <li><a href="#activite" title="Activités">Activités</a></li>
+            <li><a href="" title="S'inscrire">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class="wrapper">
+    <main>
       <div class="titre">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
       <!--barre de recherche -->
-      <div class="searchbar">
-        <i class="fas fa-map-marker-alt"></i>
+      <form class="searchbar">
+        <i class="fas fa-map-marker-alt marker"></i>
         <input type="text" class="search" placeholder="Marseille,France" />
-        <input class="btn large-button" type="submit" value="Rechercher" />
-      </div>
+        <input type="submit" class="submit" value="Rechercher" />
+      </form>
       <!-- fin barre de recherche-->
 
       <!--bloc filtres-->
       <div class="filtres">
-        <p>Filtres</p>
-        <!--filtre eco-->
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round">Economique</span>
-        </label>
-        <!--filtre Familial-->
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round">Familial</span>
-        </label>
-        <!--filtre romantique-->
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round">Romantique</span>
-        </label>
-        <!--filtre pets -->
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round">Animaux autorisés</span>
-        </label>
+        <span>Filtres</span>
+        <div class="btngrp">
+          <label class="switch">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Économique</span>
+          </label>
+
+          <label class="switch">
+            <i class="fas fa-child"></i>
+            <span>Familial</span>
+          </label>
+
+          <label class="switch">
+            <i class="fas fa-heart"></i>
+            <span>Romantique</span>
+          </label>
+
+          <label class="switch">
+            <i class="fas fa-dog"></i>
+            <span>Animaux autorisés</span>
+          </label>
+        </div>
       </div>
       <!--Fin du bloc Filtres-->
 
       <!--info nb logements-->
       <div class="info">
-        <i class="fas fa-info-circle"></i>
+        <i class="fas fa-info"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
 
@@ -292,7 +299,7 @@
       <!--fin du bloc activites-->
     </main>
 
-    <footer class="wrapper">
+    <footer>
       <div class="about">
         <p>À propos</p>
         <ul>
