@@ -285,10 +285,6 @@ aside {
 /*    Fin populaires    */
 /*    Début Début Activités   */
 
-.activites {
-  /*    Delete this*/
-  background-color: grey;
-}
 .actgrid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -309,6 +305,7 @@ aside {
   justify-content: flex-start;
   height: 11rem;
   background-color: #fff;
+  box-shadow: 1px 1px 1px grey;
 }
 .actgrid article h3 {
   padding-left: 1rem;
