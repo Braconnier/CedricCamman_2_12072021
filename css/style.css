@@ -1,15 +1,18 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
 a {
   text-decoration: none;
   color: black;
 }
 .wrapper {
-  max-width: 1440px;
+  max-width: 90rem;
+  width: 100%;
   align-content: center;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   font-family: "raleway", sans-serif;
 }
 /*    Header    */
@@ -44,7 +47,7 @@ nav .active {
 }
 h1 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 .titre p {
@@ -53,8 +56,8 @@ h1 {
 }
 /*    Début formulaire de recherche   */
 form {
-  width: 425px;
-  height: 50px;
+  width: 26.5rem;
+  height: 3rem;
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
@@ -75,6 +78,11 @@ form input {
   padding: 4px 10px;
   border: 0;
   font-size: 16px;
+}
+input::placeholder {
+  font-weight: 600;
+  color: black;
+  opacity: 100%;
 }
 form .search {
   width: 70%;
@@ -120,14 +128,14 @@ form .submit {
   align-items: center;
 }
 .filtres span {
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 /*    fin des filtres   */
 /*    début nb hébergements   */
 .info {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -135,7 +143,7 @@ form .submit {
 .info i {
   width: 1.5em;
   height: 1.5em;
-  margin-right: 10px;
+  margin-right: 0.5rem;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   color: #0065fc;
@@ -154,45 +162,118 @@ form .submit {
 .uncheck {
   color: #f2f2f2;
 }
-/* Fin nb Départ bloc hébergements    */
-.hebergements img {
-  max-width: 150px;
-  max-height: 150px;
-}
-.populaires img {
-  max-width: 150px;
-  max-height: 150px;
-}
-.activites img {
-  max-width: 150px;
-  max-height: 150px;
+/*    Fin nb Départ bloc hébergements    */
+/*    Départ du maine  */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
 }
 .blocheb {
-  width: 880px;
-  height: 630px;
-  border-radius: 20px;
   background-color: #f2f2f2;
-  box-shadow: 1px 1px 1px #f2f2f2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.more {
+  padding-top: 2rem;
 }
 .articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+h3 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.description p {
+  margin-bottom: 0.3rem;
+}
+.stars {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+}
+.stars > i {
+  margin-left: 0.175rem;
+  margin-bottom: 0.3rem;
+}
+.description {
+  padding: 0.1rem 0.5rem;
+}
+.heb img {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+}
+.heb:hover {
+  transition: transform 0.2s;
+  transform: scale(1.2);
 }
 .heb {
-  width: 220px;
-  height: 200px;
   background-color: #fff;
-  text-align: center;
-  vertical-align: middle;
   border-radius: 20px;
-  margin: 20px;
-  box-shadow: 1px 1px 1px #f2f2f2;
+  box-shadow: 1px 1px 1px grey;
+}
+/*    Fin Fin du bloc hebergements    */
+/*    Fin Début populaires    */
+aside {
+  background-color: #f2f2f2;
+  border-radius: 1.5rem;
+}
+.titrepop {
+  position: unset;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
 }
 .populaires {
-  max-width: 420px;
-  max-height: 630px;
-  border-radius: 20px;
-  background-color: #f2f2f2;
-  box-shadow: 1px 1px 1px #f2f2f2;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto repeat(2, 1fr);
+  row-gap: 2rem;
+}
+.popcard {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.pop a {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  padding: 0.25rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 1px 1px 1px grey;
+  height: 8rem;
+}
+.imagebox {
+  min-width: 30%;
+  height: auto;
+  position: relative;
+}
+.pop:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+.imagebox > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem 0 0 1.5rem;
+  position: absolute;
+}
+
+.pop .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
