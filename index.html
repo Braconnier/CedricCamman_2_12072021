@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Police Raleway depuis googleapis.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600&display=swap"
@@ -49,7 +50,7 @@
     <form class="searchbar">
       <i class="fas fa-map-marker-alt marker"></i>
       <input type="text" class="search" placeholder="Marseille,France" />
-      <input type="submit" class="submit" value="Rechercher" />
+      <input type="submit" class="submit" value="Rechercher" id="recherche" />
     </form>
     <!-- fin barre de recherche-->
 
@@ -304,60 +305,68 @@
     <div class="activites">
       <h2 id="activite">Activités à Marseille</h2>
       <section class="actgrid">
-        <article class="act1">
-          <div class="imageboxact">
-            <img
-              src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="image Vieux Port"
-            />
-          </div>
-          <h3>Vieux Port</h3>
-        </article>
-        <article class="act2">
-          <div class="imageboxact">
-            <img
-              src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="image Fort de Promègues"
-            />
-          </div>
-          <h3>Fort de Promègues</h3>
-        </article>
-        <article class="act3">
-          <div class="imageboxact">
-            <img
-              src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-              alt="image Îles de Frioul"
-            />
-          </div>
-          <h3>Îles de Frioul</h3>
-        </article>
-        <article class="act4">
-          <div class="imageboxact">
-            <img
-              src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="image Parc National des Calanques"
-            />
-          </div>
-          <h3>Parc National des Calanques</h3>
-        </article>
-        <article class="act5">
-          <div class="imageboxact">
-            <img
-              src="./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="image Notre-Dame-de-la-Garde"
-            />
-          </div>
-          <h3>Notre-Dame-de-la-Garde</h3>
-        </article>
-        <article class="act6">
-          <div class="imageboxact">
-            <img
-              src="./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-              alt="image Parc Longchamp"
-            />
-          </div>
-          <h3>Parc Longchamp</h3>
-        </article>
+        <div class="actfull">
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="image Vieux Port"
+              />
+            </div>
+            <h3>Vieux Port</h3>
+          </article>
+        </div>
+        <div class="actfull">
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="image Fort de Promègues"
+              />
+            </div>
+            <h3>Fort de Promègues</h3>
+          </article>
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="image Îles de Frioul"
+              />
+            </div>
+            <h3>Îles de Frioul</h3>
+          </article>
+        </div>
+        <div class="actfull">
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="image Parc National des Calanques"
+              />
+            </div>
+            <h3>Parc National des Calanques</h3>
+          </article>
+        </div>
+        <div class="actfull">
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="./img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="image Notre-Dame-de-la-Garde"
+              />
+            </div>
+            <h3>Notre-Dame-de-la-Garde</h3>
+          </article>
+          <article class="act">
+            <div class="imageboxact">
+              <img
+                src="./img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="image Parc Longchamp"
+              />
+            </div>
+            <h3>Parc Longchamp</h3>
+          </article>
+        </div>
       </section>
     </div>
     <!--fin du bloc activites-->

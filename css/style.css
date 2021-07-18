@@ -61,7 +61,7 @@ form {
   background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 form:hover {
   box-shadow: 1px 1px 1px grey;
@@ -80,12 +80,15 @@ form input {
   font-size: 16px;
 }
 input::placeholder {
+  font-family: "raleway", sans-serif;
   font-weight: 600;
   color: black;
   opacity: 100%;
 }
 form .search {
   width: 70%;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 form .submit {
   width: 140px;
@@ -93,6 +96,7 @@ form .submit {
   color: #ffffff;
   border-radius: 0 10px 10px 0;
 }
+
 /*    Fin formulaire de recherche   */
 /*    Début des filtres   */
 .filtres {
@@ -102,6 +106,7 @@ form .submit {
   align-items: center;
 }
 .btngrp {
+  gap: 1rem;
   display: flex;
   flex-flow: row wrap;
 }
@@ -129,8 +134,7 @@ form .submit {
   align-items: center;
 }
 .filtres span {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  padding: 1rem;
 }
 /*    fin des filtres   */
 /*    début nb hébergements   */
@@ -285,40 +289,47 @@ aside {
 /*    Fin populaires    */
 /*    Début Début Activités   */
 
-.actgrid {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: auto;
-  font-weight: 600;
-  grid-gap: 2rem;
-}
 #activite {
-  position: unset;
   font-size: 1.5rem;
   margin-top: 2rem;
-  padding-top: 2rem;
 }
-.actgrid > article {
-  border-radius: 1.5rem;
+
+.actgrid {
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  height: 11rem;
+  flex-flow: row nowrap;
+  height: 30rem;
+  gap: 2rem;
+}
+
+.actfull {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+  height: 100%;
+}
+.act {
+  margin: 1rem 0 1rem 0;
+  border-radius: 1.5rem;
   background-color: #fff;
   box-shadow: 1px 1px 1px grey;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
-.actgrid article h3 {
+
+.imageboxact {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.act h3,
+.actfull h3 {
+  min-height: 3rem;
   padding-left: 1rem;
-  height: 5rem;
   display: flex;
   align-items: center;
 }
-.imageboxact {
-  height: 10rem;
-  position: relative;
-  border-radius: 1.5rem;
-}
-
 .imageboxact > img {
   width: 100%;
   height: 100%;
