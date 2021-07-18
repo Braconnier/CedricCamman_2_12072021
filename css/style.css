@@ -337,3 +337,25 @@ aside {
   border-radius: 1.5rem 1.5rem 0 0;
   position: absolute;
 }
+.footerwrapper {
+  max-width: 100rem;
+  align-content: center;
+  margin: 0 auto;
+  font-family: "raleway", sans-serif;
+}
+footer {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+ul {
+  padding: 1rem 0 0;
+}
+li {
+  padding: 1rem 0 0;
+}
