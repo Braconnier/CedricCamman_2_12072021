@@ -16,27 +16,34 @@ a {
   font-family: "raleway", sans-serif;
 }
 /*    Header    */
+.lowres {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .topnav {
-  margin: 50px auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-nav {
-  width: 28%;
-}
+
 nav ul {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
 }
+nav ul li a {
+  padding: 0 1rem;
+  margin-right: 2rem;
+}
 nav li a[title*="inscrire"] {
   font-weight: 600;
   color: #0065fc;
 }
 nav .active {
-  padding-top: 48px;
+  padding-top: 3rem;
   border-top: 2px solid blue;
   color: #0065fc;
 }
@@ -55,8 +62,13 @@ h1 {
   font-weight: 400;
 }
 /*    Début formulaire de recherche   */
+.mobilebar {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 form {
-  width: 26.5rem;
+  width: 30rem;
   height: 3rem;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -91,7 +103,7 @@ form .search {
   border-bottom: 1px solid #f2f2f2;
 }
 form .submit {
-  width: 140px;
+  width: 10rem;
   background-color: #0065fc;
   color: #ffffff;
   border-radius: 0 10px 10px 0;
@@ -339,6 +351,7 @@ aside {
 }
 .footerwrapper {
   max-width: 100rem;
+  width: 100%;
   align-content: center;
   margin: 0 auto;
   font-family: "raleway", sans-serif;
@@ -358,4 +371,149 @@ ul {
 }
 li {
   padding: 1rem 0 0;
+}
+@media screen and (max-width: 1460px) {
+  .lowres {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .wrapper,
+  .footerwrapper {
+    max-width: 90rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper,
+  .footerwrapper {
+    max-width: 80rem;
+  }
+
+  .pop .description {
+    padding: 0;
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper,
+  .footerwrapper {
+    max-width: 30rem;
+  }
+  /*    Header  @screen-width 768>screen>488  */
+  .desktop {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .lowres {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .active {
+    color: #0065fc;
+    font-weight: 500;
+  }
+  .lowres > * {
+    align-self: end;
+  }
+  #logo {
+    order: 0;
+  }
+  .lowres > a {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+  #linksubs {
+    order: 1;
+    align-self: end;
+    justify-self: end;
+    color: #0065fc;
+    font-weight: 600;
+  }
+  #linkheb {
+    order: 2;
+    font-weight: 500;
+    justify-self: center;
+  }
+  #linkact {
+    order: 3;
+    justify-self: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    order: -1;
+  }
+  .articles {
+    grid-template-columns: 1fr;
+  }
+  .actgrid {
+    width: 100%;
+    flex-flow: column nowrap;
+    height: inherit;
+    gap: inherit;
+  }
+  .actfull {
+    display: grid;
+    width: 100%;
+  }
+  .act {
+    width: 100%;
+    height: 10rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  ul {
+    padding: 0.5rem 0 0;
+  }
+  li {
+    padding: 0.5rem 0 0;
+  }
+  .description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper,
+  .footerwrapper {
+    padding: 0 1rem;
+  }
+  .searchbar {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .mobilebar {
+    visibility: visible;
+    height: 100%;
+    width: 24rem;
+  }
+  .mobilebar {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .marker {
+    width: 5rem;
+  }
+  .fa-search {
+    width: 5rem;
+    background-color: #0065fc;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  form .search {
+    width: 20rem;
+    position: relative;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+  }
 }
