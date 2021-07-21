@@ -3,6 +3,7 @@
 }
 html {
   font-size: 100%;
+  font-family: "raleway", sans-serif;
 }
 a {
   text-decoration: none;
@@ -13,9 +14,12 @@ a {
   width: 100%;
   align-content: center;
   margin: 0 auto;
-  font-family: "raleway", sans-serif;
+  padding: 0 2rem 0 2rem;
 }
 /*    Header    */
+.headerwrapper {
+  padding: 2rem 2rem 0;
+}
 nav {
   display: flex;
   flex-flow: row wrap;
@@ -28,8 +32,9 @@ nav {
 .liens {
   width: 50%;
   display: flex;
+  align-self: flex-end;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .liens a {
   padding-top: 1.2rem;
@@ -45,7 +50,7 @@ nav {
 }
 /*    Départ de la page   */
 .titre {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 h1 {
@@ -58,13 +63,10 @@ h1 {
   font-weight: 400;
 }
 /*    Début formulaire de recherche   */
-.mobilebar {
-  display: none;
-}
-form {
-  width: 30rem;
+
+form.searchbar {
+  min-width: 20rem;
   height: 3rem;
-  background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
   margin-bottom: 1rem;
@@ -72,16 +74,21 @@ form {
 form:hover {
   box-shadow: 1px 1px 1px grey;
 }
-form .fas {
-  width: 50px;
-  height: 50px;
+.searchbar i.fas {
+  min-width: 3rem;
+  height: 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+i.fas.fa-map-marker-alt.marker {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
 form input {
-  padding: 4px 10px;
   border: 0;
   font-size: 16px;
 }
@@ -91,8 +98,8 @@ input::placeholder {
   color: black;
   opacity: 100%;
 }
-form .search {
-  width: 70%;
+.search {
+  max-width: 20rem;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -101,6 +108,9 @@ form .submit {
   background-color: #0065fc;
   color: #ffffff;
   border-radius: 0 10px 10px 0;
+}
+i.fas.fa-search {
+  display: none;
 }
 
 /*    Fin formulaire de recherche   */
@@ -344,11 +354,12 @@ aside {
   position: absolute;
 }
 .footerwrapper {
-  max-width: 100rem;
+  width: 100rem;
   width: 100%;
   align-content: center;
   margin: 0 auto;
   font-family: "raleway", sans-serif;
+  padding: 0;
 }
 footer {
   padding: 2rem;
@@ -360,16 +371,59 @@ footer p {
   font-size: 1.25rem;
   font-weight: 700;
 }
-ul {
+footer ul {
   padding: 1rem 0 0;
 }
-li {
+footer li {
   padding: 1rem 0 0;
 }
-
-@media screen and (max-width: 768px) {
+/*    Media Quieries    */
+@media screen and (max-width: 860px) {
+  .footerwrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    order: -1;
+  }
+  #activite {
+    padding-left: 2rem;
+  }
+  .actgrid {
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    padding: 0 2rem 0 2rem;
+    gap: 0;
+  }
+  .actfull {
+    width: 100%;
+    height: 100%;
+  }
+  .act {
+    width: 100%;
+    height: 10rem;
+    flex-flow: column nowrap;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  footer div {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .headerwrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .logobox {
     position: absolute;
+    padding-left: 2rem;
   }
   .liens {
     width: 100%;
@@ -394,5 +448,38 @@ li {
   .lienact {
     grid-area: 2/2;
     border-bottom: 2px solid #f2f2f2;
+  }
+  .articles {
+    grid-template-columns: 1fr;
+  }
+  .blocheb {
+    background-color: #fff;
+  }
+  .heb:hover {
+    transform: scale(1.1);
+  }
+  aside {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    padding: 0 1rem 0 1rem;
+  }
+  .submit {
+    display: none;
+  }
+  i.fas.fa-search {
+    display: flex;
+    color: #fff;
+    background-color: #0065fc;
+    border-radius: 10px;
+  }
+  .searchbar {
+    justify-content: space-between;
+  }
+  .dest {
+    width: 100%;
   }
 }

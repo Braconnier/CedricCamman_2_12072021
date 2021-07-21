@@ -24,25 +24,25 @@
   </head>
 
   <body>
+    <!--    Header -->
+    <header class="headerwrapper">
+      <nav>
+        <div class="logobox">
+          <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
+        </div>
+        <!--barre de nav-->
+        <div class="liens">
+          <a class="lien active" href="#hebergements" title="Hébergements"
+            >Hébergements</a
+          >
+          <a class="lien lienact" href="#activite" title="Activités"
+            >Activités</a
+          >
+          <a class="lien login" href="" title="S'inscrire">S'inscrire</a>
+        </div>
+      </nav>
+    </header>
     <div class="wrapper">
-      <!--    Header -->
-      <header>
-        <nav>
-          <div class="logobox">
-            <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
-          </div>
-          <!--barre de nav-->
-          <div class="liens">
-            <a class="lien active" href="#hebergements" title="Hébergements"
-              >Hébergements</a
-            >
-            <a class="lien lienact" href="#activite" title="Activités"
-              >Activités</a
-            >
-            <a class="lien login" href="" title="S'inscrire">S'inscrire</a>
-          </div>
-        </nav>
-      </header>
       <!--    Fin header    -->
       <div class="titre">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -51,20 +51,10 @@
       <!--    barre de recherche    -->
       <form class="searchbar">
         <i class="fas fa-map-marker-alt marker"></i>
-        <input
-          type="text"
-          class="fas fa-search search"
-          placeholder="Marseille,France"
-        />
-        <input type="submit" class="submit" />
-      </form>
-      <!--   barre de recherche Mobile   -->
-      <form class="mobilebar">
-        <i class="fas fa-map-marker-alt marker"></i>
-        <input type="text" class="search" placeholder="Marseille,France" />
+        <input type="text" class="dest" placeholder="Marseille,France" />
+        <input type="submit" class="submit" value="Rechercher" />
         <i type="submit" class="fas fa-search"></i>
       </form>
-      <!--   fin barre de recherche Mobile   -->
 
       <!--bloc filtres-->
       <div class="filtres">
