@@ -25,56 +25,46 @@
 
   <body>
     <div class="wrapper">
-      <header class="desktop">
-        <!--    Header desktop    -->
-        <div class="topnav">
-          <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
-          <nav>
-            <!--barre de nav-->
-            <ul>
-              <li>
-                <a class="active" href="#hebergements" title="Hébergements"
-                  >Hébergements</a
-                >
-              </li>
-              <li><a href="#activite" title="Activités">Activités</a></li>
-              <li><a href="" title="S'inscrire">S'inscrire</a></li>
-            </ul>
-          </nav>
-        </div>
+      <!--    Header -->
+      <header>
+        <nav>
+          <div class="logobox">
+            <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
+          </div>
+          <!--barre de nav-->
+          <div class="liens">
+            <a class="lien active" href="#hebergements" title="Hébergements"
+              >Hébergements</a
+            >
+            <a class="lien lienact" href="#activite" title="Activités"
+              >Activités</a
+            >
+            <a class="lien login" href="" title="S'inscrire">S'inscrire</a>
+          </div>
+        </nav>
       </header>
-      <!--    Fin header desktop    -->
-
-      <header class="lowres">
-        <!--   Header mobile  -->
-        <img id="logo" src="img/logo/Reservia.svg" alt="logo" />
-        <a id="linkheb" class="active" href="#hebergements" title="Hébergements"
-          >Hébergements</a
-        >
-        <a id="linkact" href="#activite" title="Activités">Activités</a>
-        <a id="linksubs" href="" title="S'inscrire">S'inscrire</a>
-      </header>
-      <!--   Fin header mobile -->
-
+      <!--    Fin header    -->
       <div class="titre">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
-      <!--    barre de recherche Desktop    -->
+      <!--    barre de recherche    -->
       <form class="searchbar">
         <i class="fas fa-map-marker-alt marker"></i>
-        <input type="text" class="search" placeholder="Marseille,France" />
-        <input type="submit" class="submit" value="Rechercher" />
+        <input
+          type="text"
+          class="fas fa-search search"
+          placeholder="Marseille,France"
+        />
+        <input type="submit" class="submit" />
       </form>
-      <!--    fin barre de recherche Desktop   -->
-
-      <!--    barre de recherche Mobile    -->
+      <!--   barre de recherche Mobile   -->
       <form class="mobilebar">
         <i class="fas fa-map-marker-alt marker"></i>
         <input type="text" class="search" placeholder="Marseille,France" />
         <i type="submit" class="fas fa-search"></i>
       </form>
-      <!--    fin barre de recherche Mobile   -->
+      <!--   fin barre de recherche Mobile   -->
 
       <!--bloc filtres-->
       <div class="filtres">
