@@ -18,6 +18,10 @@ a {
 }
 /*    Header    */
 .headerwrapper {
+  max-width: 90rem;
+  width: 100%;
+  align-content: center;
+  margin: 0 auto;
   padding: 2rem 2rem 0;
 }
 nav {
