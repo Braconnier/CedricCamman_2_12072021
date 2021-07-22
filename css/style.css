@@ -30,14 +30,15 @@ nav {
   justify-content: space-between;
 }
 .logobox {
-  width: 50%;
+  min-width: 30%;
 }
 
 .liens {
-  width: 50%;
+  min-width: 30%;
+  gap: 1rem;
   display: flex;
   align-self: flex-end;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 .liens a {
@@ -366,13 +367,13 @@ aside {
   width: 100rem;
   width: 100%;
   align-content: center;
-  margin: 0 auto;
-  font-family: "raleway", sans-serif;
   padding: 0;
+  background-color: #f2f2f2;
 }
 footer {
+  max-width: 90rem;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #f2f2f2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
