@@ -69,7 +69,7 @@ h1 {
 /*    Début formulaire de recherche   */
 
 form.searchbar {
-  min-width: 20rem;
+  width: 20rem;
   height: 3rem;
   border-radius: 10px;
   display: flex;
