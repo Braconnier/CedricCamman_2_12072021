@@ -244,14 +244,14 @@ h3 {
   border: 3px solid white;
   border-radius: 20px 20px 0 0;
 }
-.heb:hover {
-  transition: transform 0.2s;
-  transform: scale(1.2);
-}
 .heb {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 1px 1px 1px grey;
+  transition: all 0.3s ease-in-out;
+}
+.heb:hover {
+  transform: scale(1.2);
 }
 /*    Fin du bloc hebergements    */
 /*    Début populaires    */
@@ -289,8 +289,10 @@ aside {
   box-shadow: 1px 1px 1px grey;
   height: 8rem;
 }
+.pop {
+  transition: all 0.2s ease-in-out;
+}
 .pop:hover {
-  transition: transform 0.2s;
   transform: scale(1.1);
 }
 .imagebox {
