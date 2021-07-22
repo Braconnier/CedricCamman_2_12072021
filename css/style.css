@@ -18,7 +18,11 @@ a {
 }
 /*    Header    */
 .headerwrapper {
-  padding: 2rem 2rem 0;
+  max-width: 90rem;
+  width: 100%;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 nav {
   display: flex;
@@ -26,14 +30,15 @@ nav {
   justify-content: space-between;
 }
 .logobox {
-  width: 50%;
+  min-width: 30%;
 }
 
 .liens {
-  width: 50%;
+  min-width: 30%;
+  gap: 1rem;
   display: flex;
   align-self: flex-end;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 .liens a {
@@ -65,32 +70,37 @@ h1 {
 /*    Début formulaire de recherche   */
 
 form.searchbar {
-  min-width: 20rem;
+  max-width: 25rem;
   height: 3rem;
   border-radius: 10px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
-form:hover {
+.searchbar:hover {
   box-shadow: 1px 1px 1px grey;
 }
 .searchbar i.fas {
   min-width: 3rem;
   height: 3rem;
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: space-around;
 }
 
 i.fas.fa-map-marker-alt.marker {
-  display: flex;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
 }
 form input {
   border: 0;
-  font-size: 16px;
+  font-size: 1rem;
+}
+.dest {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
 }
 input::placeholder {
   font-family: "raleway", sans-serif;
@@ -99,12 +109,12 @@ input::placeholder {
   opacity: 100%;
 }
 .search {
-  max-width: 20rem;
+  width: 20rem;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
 }
 form .submit {
-  width: 10rem;
+  padding: 0 1.2rem;
   background-color: #0065fc;
   color: #ffffff;
   border-radius: 0 10px 10px 0;
@@ -357,13 +367,13 @@ aside {
   width: 100rem;
   width: 100%;
   align-content: center;
-  margin: 0 auto;
-  font-family: "raleway", sans-serif;
   padding: 0;
+  background-color: #f2f2f2;
 }
 footer {
+  max-width: 90rem;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #f2f2f2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -478,8 +488,5 @@ footer li {
   }
   .searchbar {
     justify-content: space-between;
-  }
-  .dest {
-    width: 100%;
   }
 }
