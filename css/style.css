@@ -78,7 +78,7 @@ form.searchbar {
   margin-bottom: 1rem;
 }
 .searchbar:hover {
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
 }
 .searchbar i.fas {
   min-width: 3rem;
@@ -147,7 +147,7 @@ i.fas.fa-search {
   align-items: center;
 }
 .switch:hover {
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
 }
 .filtres .fas {
   width: 50px;
@@ -247,7 +247,7 @@ h3 {
 .heb {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
   transition: all 0.3s ease-in-out;
 }
 .heb:hover {
@@ -286,7 +286,7 @@ aside {
   border-radius: 1.5rem;
   overflow: hidden;
   background: white;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
   height: 8rem;
 }
 .pop {
@@ -339,7 +339,7 @@ aside {
   margin: 1rem 0 1rem 0;
   border-radius: 1.5rem;
   background-color: #fff;
-  box-shadow: 1px 1px 1px grey;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
