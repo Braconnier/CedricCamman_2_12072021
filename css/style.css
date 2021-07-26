@@ -172,8 +172,8 @@ i.fas.fa-search {
   align-content: center;
 }
 .info i {
-  width: 1.5em;
-  height: 1.5em;
+  min-width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
@@ -206,9 +206,9 @@ i.fas.fa-search {
   padding: 2rem;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .more {
   font-size: 1.2rem;
@@ -319,7 +319,7 @@ aside {
 
 #activite {
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .actgrid {
@@ -477,6 +477,7 @@ footer li {
 
 @media screen and (max-width: 460px) {
   .wrapper {
+    width: 100%;
     padding: 0 1rem 0 1rem;
   }
   .submit {
@@ -490,5 +491,30 @@ footer li {
   }
   .searchbar {
     justify-content: space-between;
+  }
+  aside {
+    padding: 0;
+    margin: 0 -1rem;
+  }
+  .titrepop {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .populaires {
+    margin: -1rem;
+  }
+  .blocheb,
+  .actgrid,
+  #activite {
+    padding: 0;
+  }
+  #activite {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .actfull:last-child {
+    padding-bottom: 2rem;
+  }
+  .footerwrapper {
+    padding: 0;
   }
 }
