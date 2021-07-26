@@ -327,6 +327,7 @@ aside {
   flex-flow: row nowrap;
   height: 30rem;
   gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .actfull {
@@ -511,7 +512,7 @@ footer li {
     font-size: 1.2rem;
     margin-top: 2rem;
   }
-  .actfull:last-child {
+  .actgrid {
     padding-bottom: 2rem;
   }
   .footerwrapper {
